@@ -20,3 +20,9 @@ This is a barebones Rails application with a Neo4j graph database backend.
    ```
    $ bin/rake neo4j:start
    ```
+
+3. Run the migrations.
+
+   ```
+   $ bin/rails neo4j:migrate
+   ```
