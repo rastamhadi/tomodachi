@@ -1,24 +1,9 @@
-# README
+# Tomodachi
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a barebones Rails application with a Neo4j graph database backend.
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- rbenv
+- bundler
+- neo4j
