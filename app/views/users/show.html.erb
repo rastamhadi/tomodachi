@@ -1,9 +1,58 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<h2>
   <strong>Name:</strong>
   <%= @user.name %>
-</p>
+</h2>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+<hr />
+
+<h3>Friends</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @friends.each do |friend| %>
+      <tr>
+        <td><%= friend.name %></td>
+        <td><%= link_to 'Unfriend', user_friendship_path(@user, friend), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<hr />
+
+<h3>Strangers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @strangers.each do |stranger| %>
+      <tr>
+        <td><%= stranger.name %></td>
+        <td>
+          <%= form_with model: stranger, url: user_friendships_path(@user), method: :post do |form| %>
+            <%= form.hidden_field :id %>
+            <%= form.submit 'Friend' %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

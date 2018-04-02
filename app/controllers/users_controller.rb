@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @friends = @user.friends.order(:name)
+    @strangers = User.where_not(uuid: @user).where_not(uuid: @user.friends.pluck(:uuid)).order(:name)
   end
 
   # GET /users/new
