@@ -13,6 +13,7 @@
 
 # Ignore the default Neo4j database.
 /db/neo4j/development/*
+/db/neo4j/test/*
 
 # Ignore all logfiles and tempfiles.
 /log/*
