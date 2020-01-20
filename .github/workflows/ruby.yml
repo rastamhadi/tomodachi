@@ -7,14 +7,29 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    services:
+      neo4j:
+        image: neo4j:latest
+        ports:
+          - 7575:7474
+          - 7687:7687
+        env:
+          NEO4J_AUTH: none
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Set up Ruby 2.5.x
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Install SQLite3
+      run: sudo apt-get install libsqlite3-dev
+    - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.5.x
-    - name: Build and test with Rake
+    - name: Install gems
       run: |
-        gem install bundler
+        gem install bundler --no-ri --no-rdoc
         bundle install --jobs 4 --retry 3
-        bundle exec rake
+    - name: Setup Neo4j
+      run: RAILS_ENV=test bin/rails neo4j:migrate
+    - name: Run tests
+      run: bin/rails test
