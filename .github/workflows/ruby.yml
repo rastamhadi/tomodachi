@@ -30,6 +30,8 @@ jobs:
         gem install bundler --no-ri --no-rdoc
         bundle install --jobs 4 --retry 3
     - name: Setup Neo4j
-      run: RAILS_ENV=test bin/rails neo4j:migrate
+      run: |
+        curl -i --user neo4j:neo4j http://localhost:7575
+        RAILS_ENV=test bin/rails neo4j:migrate --trace
     - name: Run tests
       run: bin/rails test
