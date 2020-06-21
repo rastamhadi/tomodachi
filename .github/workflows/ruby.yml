@@ -20,7 +20,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Install SQLite3
-      run: sudo apt-get install libsqlite3-dev
+      run: sudo apt-get install libsqlite3-dev --fix-missing
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
