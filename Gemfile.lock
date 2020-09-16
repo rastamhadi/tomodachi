@@ -138,7 +138,7 @@ GEM
       ruby-progressbar
       rubyzip (>= 1.1.7)
     net_tcp_client (2.2.0)
-    nio4r (2.5.3)
+    nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
