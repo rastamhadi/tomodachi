@@ -190,7 +190,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (1.8.2)
     ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.4)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
