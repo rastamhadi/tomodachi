@@ -82,7 +82,6 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.8)
-    connection_pool (2.2.5)
     crass (1.0.6)
     erubi (1.10.0)
     ethon (0.13.0)
@@ -98,8 +97,7 @@ GEM
     faraday-excon (1.0.0)
       excon (>= 0.27.4)
     faraday-net_http (1.0.1)
-    faraday-net_http_persistent (1.0.3)
-      net-http-persistent (>= 3.1)
+    faraday-net_http_persistent (1.1.0)
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
     faraday_middleware-multi_json (0.0.6)
@@ -150,8 +148,6 @@ GEM
       rake
       ruby-progressbar
       rubyzip (>= 1.1.7)
-    net-http-persistent (4.0.1)
-      connection_pool (~> 2.2)
     net_tcp_client (2.2.0)
     nio4r (2.5.7)
     nokogiri (1.11.3)
