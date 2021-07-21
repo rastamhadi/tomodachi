@@ -118,7 +118,7 @@ GEM
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     json (2.5.1)
-    listen (3.5.1)
+    listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.10.0)
@@ -258,7 +258,7 @@ DEPENDENCIES
   capybara (~> 3.35)
   coffee-rails (~> 5.0)
   jbuilder (~> 2.11)
-  listen (>= 3.0.5, < 3.6)
+  listen (>= 3.0.5, < 3.7)
   neo4j (~> 9.6.2)
   neo4j-rake_tasks
   puma (~> 5.3)
