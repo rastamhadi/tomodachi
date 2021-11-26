@@ -112,7 +112,7 @@ GEM
       faraday_middleware
       multi_json
     ffi (1.15.4)
-    globalid (0.5.2)
+    globalid (1.0.0)
       activesupport (>= 5.0)
     httpclient (2.8.3)
     i18n (1.8.11)
