@@ -25,7 +25,7 @@ module Tomodachi
     # config.neo4j.session.path = Rails.root.join('neo4j-db').to_s
 
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.1
+    config.load_defaults 5.2
 
     # Configuration for the application, engines, and railties goes here.
     #
