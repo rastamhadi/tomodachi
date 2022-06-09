@@ -148,7 +148,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.15.0)
     multi_json (1.15.0)
-    multipart-post (2.2.0)
+    multipart-post (2.2.2)
     neo4j (9.6.2)
       activemodel (>= 4.0)
       activesupport (>= 4.0)
