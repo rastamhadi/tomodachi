@@ -170,10 +170,8 @@ GEM
       rake
       ruby-progressbar
       rubyzip (>= 1.1.7)
-    net-imap (0.2.3)
-      digest
+    net-imap (0.3.0)
       net-protocol
-      strscan
     net-pop (0.1.2)
       net-protocol
     net-protocol (0.1.3)
@@ -256,7 +254,6 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.5.0)
       mini_portile2 (~> 2.8.0)
-    strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.0)
