@@ -227,7 +227,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.7.0)
     rexml (3.2.5)
-    ruby-progressbar (1.11.0)
+    ruby-progressbar (1.12.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
