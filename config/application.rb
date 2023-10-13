@@ -1,7 +1,7 @@
 require_relative "boot"
 
 require "rails/all"
-require 'neo4j/railtie'
+require 'active_graph/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -10,7 +10,7 @@ Bundler.require(*Rails.groups)
 module Tomodachi
   class Application < Rails::Application
     config.generators do |g|
-      g.orm :neo4j
+      g.orm :active_graph
     end
 
     # Configure where to connect to the Neo4j DB

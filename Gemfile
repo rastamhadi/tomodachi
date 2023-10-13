@@ -32,7 +32,8 @@ gem 'jbuilder', '~> 2.11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'neo4j', '~> 9.6.2'
+gem 'activegraph', '~> 10.1.0'
+gem 'neo4j-ruby-driver'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -49,6 +49,12 @@ GEM
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
+    activegraph (10.1.1)
+      activemodel (>= 4.0)
+      activesupport (>= 4.0)
+      i18n (!= 1.8.8)
+      orm_adapter (~> 0.5.0)
+      sorted_set
     activejob (7.1.1)
       activesupport (= 7.1.1)
       globalid (>= 0.3.6)
@@ -104,41 +110,10 @@ GEM
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
-    ethon (0.16.0)
-      ffi (>= 1.15.0)
     execjs (2.9.1)
-    faraday (1.10.3)
-      faraday-em_http (~> 1.0)
-      faraday-em_synchrony (~> 1.0)
-      faraday-excon (~> 1.1)
-      faraday-httpclient (~> 1.0)
-      faraday-multipart (~> 1.0)
-      faraday-net_http (~> 1.0)
-      faraday-net_http_persistent (~> 1.0)
-      faraday-patron (~> 1.0)
-      faraday-rack (~> 1.0)
-      faraday-retry (~> 1.0)
-      ruby2_keywords (>= 0.0.4)
-    faraday-em_http (1.0.0)
-    faraday-em_synchrony (1.0.0)
-    faraday-excon (1.1.0)
-    faraday-httpclient (1.0.1)
-    faraday-multipart (1.0.4)
-      multipart-post (~> 2)
-    faraday-net_http (1.0.1)
-    faraday-net_http_persistent (1.2.0)
-    faraday-patron (1.0.0)
-    faraday-rack (1.0.0)
-    faraday-retry (1.0.3)
-    faraday_middleware (1.2.0)
-      faraday (~> 1.0)
-    faraday_middleware-multi_json (0.0.6)
-      faraday_middleware
-      multi_json
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    httpclient (2.8.3)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -148,7 +123,6 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    json (2.6.3)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -165,30 +139,17 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.4)
     minitest (5.20.0)
-    multi_json (1.15.0)
-    multipart-post (2.3.0)
     mutex_m (0.1.2)
-    neo4j (9.6.2)
-      activemodel (>= 4.0)
-      activesupport (>= 4.0)
-      i18n (!= 1.3.0)
-      neo4j-core (>= 9.0.0)
-      orm_adapter (~> 0.5.0)
-    neo4j-core (9.0.0)
-      activesupport (>= 4.0)
-      faraday (>= 0.9.0)
-      faraday_middleware (>= 0.10.0)
-      faraday_middleware-multi_json
-      httpclient
-      json
-      multi_json
-      net_tcp_client (>= 2.0.1)
-      typhoeus (>= 1.1.2)
     neo4j-rake_tasks (0.7.19)
       os
       rake
       ruby-progressbar
       rubyzip (>= 1.1.7)
+    neo4j-ruby-driver (1.7.6)
+      activesupport
+      ffi
+      recursive-open-struct
+      zeitwerk (>= 2.1.10)
     net-imap (0.4.1)
       date
       net-protocol
@@ -198,7 +159,6 @@ GEM
       timeout
     net-smtp (0.4.0)
       net-protocol
-    net_tcp_client (2.2.1)
     nio4r (2.5.9)
     nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
@@ -255,6 +215,7 @@ GEM
     rbtree (0.4.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
+    recursive-open-struct (1.1.3)
     regexp_parser (2.8.2)
     reline (0.3.9)
       io-console (~> 0.5)
@@ -297,8 +258,6 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    typhoeus (1.4.0)
-      ethon (>= 0.9.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
@@ -321,13 +280,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activegraph (~> 10.1.0)
   byebug
   capybara (~> 3.39)
   coffee-rails (~> 5.0)
   jbuilder (~> 2.11)
   listen (>= 3.0.5, < 3.9)
-  neo4j (~> 9.6.2)
   neo4j-rake_tasks
+  neo4j-ruby-driver
   puma (~> 6.4)
   rails (~> 7.1.1)
   sass-rails (~> 6.0)
