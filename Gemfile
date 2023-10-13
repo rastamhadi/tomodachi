@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.0.8'
+gem 'rails', '~> 7.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -32,7 +32,8 @@ gem 'jbuilder', '~> 2.11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'neo4j', '~> 9.6.2'
+gem 'activegraph', '~> 10.1.0'
+gem 'neo4j-ruby-driver'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
