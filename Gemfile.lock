@@ -229,7 +229,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbtree (0.4.6)
-    regexp_parser (2.9.0)
+    regexp_parser (2.9.1)
     rexml (3.2.6)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
