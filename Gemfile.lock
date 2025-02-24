@@ -126,7 +126,8 @@ GEM
     ffi (1.17.1-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    httpclient (2.8.3)
+    httpclient (2.9.0)
+      mutex_m
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     jbuilder (2.13.0)
@@ -152,6 +153,7 @@ GEM
     minitest (5.25.4)
     multi_json (1.15.0)
     multipart-post (2.4.1)
+    mutex_m (0.3.0)
     neo4j (9.6.2)
       activemodel (>= 4.0)
       activesupport (>= 4.0)
