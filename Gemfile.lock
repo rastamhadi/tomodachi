@@ -68,7 +68,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
-    base64 (0.2.0)
+    base64 (0.3.0)
     bindex (0.8.1)
     builder (3.3.0)
     byebug (12.0.0)
