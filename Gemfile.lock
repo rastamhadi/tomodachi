@@ -175,7 +175,7 @@ GEM
       rake
       ruby-progressbar
       rubyzip (>= 1.1.7)
-    net-imap (0.5.11)
+    net-imap (0.5.12)
       date
       net-protocol
     net-pop (0.1.2)
