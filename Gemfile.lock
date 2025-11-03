@@ -103,8 +103,9 @@ GEM
     date (3.5.0)
     drb (2.2.3)
     erubi (1.13.1)
-    ethon (0.17.0)
+    ethon (0.18.0)
       ffi (>= 1.15.0)
+      logger
     execjs (2.10.0)
     faraday (1.10.4)
       faraday-em_http (~> 1.0)
