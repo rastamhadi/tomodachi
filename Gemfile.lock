@@ -140,7 +140,7 @@ GEM
       activesupport (>= 6.1)
     httpclient (2.9.0)
       mutex_m
-    i18n (1.14.7)
+    i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
