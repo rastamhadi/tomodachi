@@ -164,7 +164,7 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.27.0)
-    multi_json (1.18.0)
+    multi_json (1.19.0)
     multipart-post (2.4.1)
     mutex_m (0.3.0)
     neo4j (9.6.2)
