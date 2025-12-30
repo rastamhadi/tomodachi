@@ -135,7 +135,7 @@ GEM
     faraday_middleware-multi_json (0.0.6)
       faraday_middleware
       multi_json
-    ffi (1.17.2-x86_64-linux-gnu)
+    ffi (1.17.3-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
     httpclient (2.9.0)
